@@ -1,0 +1,83 @@
+ :root {
+     --background-color: #33383f;
+     --darker-background-color: #243848;
+     --accent-color: rgb(72, 100, 149);
+     --text-color: #ffffff;
+     --navbar-height: 80px;
+ }
+
+ * {
+     margin: 0;
+     padding: 0.5px;
+     font-size: 22px;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+         Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+     color: var(--text-color);
+ }
+
+ body {
+     height: 100%;
+     background: radial-gradient(#33383f, rgb(42, 47, 53));
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .tab-navigation .tab-menu {
+     list-style: none;
+ }
+
+ .tab-navigation .tab-menu li {
+     display: inline-block;
+     margin-right: 0.8em;
+ }
+
+ .tab-navigation .tab-menu li a {
+     display: block;
+     padding: 0.5em 0.8em;
+     text-decoration: none;
+     background-color: rgb(111, 117, 129);
+     border-radius: 5px 5px 0 0;
+ }
+
+ .tab-navigation .tab-menu li.active a {
+     background-color: var(--accent-color);
+     font-weight: bolder;
+     font-size: larger;
+ }
+
+ .tab-pane,
+ .tab-navigation .tab-menu {
+     margin: 0 2em;
+ }
+
+ .tab-pane {
+     display: none;
+     padding: 1.2em;
+     background-color: var(--accent-color);
+     min-height: 22em;
+     border-radius: 0 5px 5px 5px;
+     border: 1px solid rgb(59, 82, 122);
+ }
+
+ .tab-pane.active {
+     display: block;
+ }
+
+ h1 {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 34px;
+     margin: 0 1.5em;
+     margin-bottom: 1.2em;
+     background-image: linear-gradient(to right, rgb(0, 162, 255), rgb(30, 15, 236));
+     background-size: 100% 4px;
+     background-position: bottom;
+     background-repeat: no-repeat;
+     line-height: 60px;
+ }
+
+ h2 {
+     border-bottom: 2px solid #fff;
+ }
